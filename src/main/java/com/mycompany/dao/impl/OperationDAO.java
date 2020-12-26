@@ -35,7 +35,10 @@ public class OperationDAO extends AbstractDAO<Long, Operation> {
                 operation.setBuyOrSell(resultSet.getString("buy or sell"));
                 operation.setFromWhichCurrency(resultSet.getString("first currency"));
                 operation.setToWhichCurrency(resultSet.getString("second currency"));
-                operation.setSum(Double.parseDouble(resultSet.getString("sum")));
+                String sum = resultSet.getString("sum");
+                if (!sum.isEmpty()) {
+                    operation.setSum(Double.parseDouble(resultSet.getString("sum")));
+                }
                 operation.setDate(resultSet.getString("date"));
 
                 operations.add(operation);

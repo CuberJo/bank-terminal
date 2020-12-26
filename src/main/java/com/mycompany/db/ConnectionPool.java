@@ -1,4 +1,4 @@
-package com.mycompany.util;
+package com.mycompany.db;
 
 import com.mycompany.exception.ConnectionPoolException;
 import com.mysql.cj.jdbc.Driver;
@@ -15,7 +15,7 @@ public class ConnectionPool {
     private final int INIT_COUNT_CNT = 10;
     private final String USERNAME = "root";
     private final String PASSWORD = "legacy";
-    private final String URL = "jdbc:mysql://localhost:3306/bank_terminal?serverTimezone=UTC";//mysql?serverTimezone=UTC";
+    private final String URL = "jdbc:mysql://localhost:3306/bank_terminal?serverTimezone=UTC";
 
     public static final ConnectionPool CONNECTION_POOL = new ConnectionPool();
 

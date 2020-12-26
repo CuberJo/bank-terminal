@@ -12,8 +12,11 @@ public enum  ApplicationProperties {
     private String readCashiers;
     private String updateCashier;
     private String viewOperationHistory;
+    private String viewOperations;
+    private String viewMobileOperationHistory;
 
     private String bill;
+    private String exchangeBill;
     private String cashierMenu;
     private String chooseCurrency;
     private String inputClientData;
@@ -94,12 +97,34 @@ public enum  ApplicationProperties {
         this.viewOperationHistory = viewOperationHistory;
     }
 
-    public String getBill() {
-        return bill;
+    public String getViewOperations() {
+        return viewOperations;
     }
+
+    public void setViewOperations(String viewOperations) {
+        this.viewOperations = viewOperations;
+    }
+
+    public String getViewMobileOperationHistory() {
+        return viewMobileOperationHistory;
+    }
+
+    public void setViewMobileOperationHistory(String viewMobileOperationHistory) {
+        this.viewMobileOperationHistory = viewMobileOperationHistory;
+    }
+
+    public String getBill() { return bill; }
 
     public void setBill(String bill) {
         this.bill = bill;
+    }
+
+    public String getExchangeBill() {
+        return exchangeBill;
+    }
+
+    public void setExchangeBill(String exchangeBill) {
+        this.exchangeBill = exchangeBill;
     }
 
     public String getCashierMenu() {

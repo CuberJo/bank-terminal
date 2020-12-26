@@ -15,7 +15,6 @@ import java.util.Optional;
 public class AdminDAO extends AbstractDAO {
     private static final Logger logger = LoggerFactory.getLogger(AdminDAO.class);
 
-
     public AdminDAO() throws SQLException {
     }
 

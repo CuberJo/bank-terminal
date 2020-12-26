@@ -2,7 +2,7 @@ package com.mycompany.dao;
 
 import com.mycompany.domain.Entity;
 import com.mycompany.exception.ConnectionPoolException;
-import com.mycompany.util.ConnectionPool;
+import com.mycompany.db.ConnectionPool;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
